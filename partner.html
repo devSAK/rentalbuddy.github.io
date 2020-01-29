@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rental Buddy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/partner.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+	    <div class="header">
+			<div class="logo">
+			<a href="index.html"><img src="rentimg/logo.png"></a>
+		    </div>
+		    <div class="logotext"><h1><font color="#fffff" style="">Rental</font><font color="#70C654"> Buddy</font></h1>
+		    </div>
+		    <ul class="navigation">
+				<li><a href="#"><img src="rentimg/callback.png" height="50px"></a></li>
+				<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="rentimg/wishlist.png" height="50px"></a></li>
+				<li>
+                    <div class="topnav">
+					<a class="active" href="partner.html">Partnership</a>	
+				    <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+				</div>
+				</li>   
+			</ul>
+		</div>
+
+<!--Header Content Finishing-->
+<!--Partner Form Starting-->
+
+		<div class="partner">	
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phn">Contact No</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="phn" name="phoneno" placeholder="Your contact no" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">City</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="australia">-Select-</option>
+                            <option value="canada">Kolkata</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="addr">Property Address</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="addr" name="address" placeholder="Write your proper address" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="bedrooms">Bedrooms in Property</label>
+                    </div>
+                    <div class="col-75">
+                         <select id="bedroom" name="Bedrooms">
+                            <option value="select">-Select-</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                        </select>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-25">
+                        <label for="status">Property Status</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="status" name="status">
+                            <option value="select">-Select-</option>
+                            <option value="unconst">Under Constructed</option>
+                            <option value="fullfur">Fully Furnished</option>
+                            <option value="semifur">Semi Furnished</option>
+                            <option value="unfur">Unfurnished</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="glink">Google Maps Link of the Property(Optional)</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="glink" name="glink" placeholder="Paste your link here">
+                    </div>
+                </div><br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+<!--Partner Form Finishing-->
+<!--Login Form Div Starting-->
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="rentimg/logo.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="contain">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit">Login</button>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="contain" style="background-color:#f1f1f1;">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forget <a href="#">Password?</a></span>
+                    <span class="sign">Don't have an Account? <a href="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</a></span>
+                </div>
+            </form>
+        </div>        
+
+<!--Login Form Finishing-->
+<!--Signup Form Starting-->
+    
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+               <h1>Sign Up</h1>
+               <p>Please fill in this form to create an account.</p>
+               <hr>
+               <label for="email"><b>Email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" required>
+
+               <label for="psw-repeat"><b>Repeat Password</b></label>
+               <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+               <label>
+               <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+               </label>
+               <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+               <div class="clearfix">
+               <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+               <button type="submit" class="signupbtn">Sign Up</button>
+               </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="clr"></div><br><br>
+
+<!--Signup Form Finishing-->  
+<!--Footer Portion Starting-->
+
+<footer>
+		 <div class="footbox">
+		    <div class="footrow">
+		    	<div class="head">
+		    		<h2>About Us</h2>
+		    		<p align="justify">Rental Buddy’s secret sauce design cool, in spaces whenever you need them, at fantastic prices.We’ve perfected the upcycling of neighbourhoods and the makeover of streets and properties.A cool design aesthetic with comfortable spaces.Crisp sheets, power-washed bathrooms the world with any Rental Buddy stay.
+		    		</p>
+		    		<div class="clr30"></div>
+		    		<ul class="social_link">
+		    			<li>
+		    				<a href="https://www.facebook.com"target="_blank">
+		    					<i class="fab fa-facebook-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-google-plus-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-twitter-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-linkedin">
+		    					</i>
+		    				</a>
+		    			</li>
+		    		</ul>
+		    		<div class="clr"></div>
+                </div>	
+		    	<div class="head">
+		    		<h2>Find RB in</h2>
+		    		<ul>
+		    			<li><a href="mess.html">Chinarpark</a></li>
+		    			<li><a href="mess.html">Hatiara</a></li>
+		    		   	<li><a href="mess.html">Mahammadpur</a></li>
+		    			<li><a href="mess.html">Naopara</a></li>
+		    			<li><a href="mess.html">Haldiram</a></li>
+		    			<li><a href="mess.html">Amity</a></li>
+		    			<li><a href="mess.html">Park Circus</a></li>
+		    			<li><a href="mess.html">Belgachiya</a></li>
+		    			<li><a href="mess.html">Sealdah</a></ll>
+		    		</ul>
+		    	</div>	
+		    	<div class="head">
+		    		<h2>Quick link</h2>
+		    		<ul>
+		    			<li>
+		    			<li><a href="index.html">Home</a></li>
+		    			<li><a href="#">About Us</a></li>
+		    			<li><a href="#">Privacy Policy</a></li>
+		    			<li><a href="https://drive.google.com/open?id=1rkX_LI2b9SMziNzY8zpI4i10oC3ykovL">Guest Policies</a></li>
+		    			<li><a href="https://drive.google.com/open?id=1MiAQnfs8VYyK6HkbluPG4lk1U2rWFizs">Partner Policies</a></li>
+		    			<li><a href="partner.html">Partner with Us</a></li>
+		    			<li><a href="#">Blog</a></li>
+		    			<li><a href="#">Testimonial</a></li>
+		    			<li><a href="faq.html">FAQs</a></li>
+		    		</ul>
+		    	</div>
+		    	<div class="head">
+		    		<h2>Contact Us</h2>
+		    		<ul>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-globe">
+		    					</i> www.rentalbuddy.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-envelope">
+		    					</i> info@rentalbuddy.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-envelope">
+		    					</i> rentalbuddy@gmail.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-phone-square">
+		    					</i> +91 89101 82013
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-clock">
+		    					</i> Contact Time : 24*7
+		    				</a>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="clr"></div>
+		</div>	
+		    <p class="copyright">Copyright © 2019 rentalbuddy.com - All Rights Reserved
+		    </p>	
+    </footer>
+</body>
+</html>	

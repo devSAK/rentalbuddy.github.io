@@ -1,0 +1,66 @@
+/* FAQ portion Page */
+
+.banner2{
+    background-image: url(../rentimg/faqbanner.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 298px;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    margin-top: 86px;
+    padding: 0;
+    border: solid 1px #3F3215;}
+.bannertext{
+    font-size: 45px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.12;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateX(150px);
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;}
+  @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+.collapsible{
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif;}
+.active, .collapsible:hover{
+  background-color: #555;}
+.collapsible:after{
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;}
+.active:after{
+  content: "\2212";}
+.content{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;}

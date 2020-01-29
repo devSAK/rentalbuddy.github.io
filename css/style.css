@@ -1,0 +1,605 @@
+body{
+	margin: 0;
+	padding: 0;
+    font-family: arial;}
+#container{
+    width: 100%;
+    margin: 0;
+    height: 700px;}
+
+/* Header Part Starting */
+
+.header{
+    width: 100%;
+    height: 86px;
+    background-color: #3F3215;
+    position: fixed;
+    z-index: 1030;
+    top: 0;}
+.logo{
+    float: left;
+    margin: 7px 5px 7px 10px;}
+.logo img{
+    height: 70px;    
+    border-radius: 50%;
+    box-shadow: 0 0 0px;} 
+.logo:hover img{
+    height: 75px;
+    box-shadow: 0 0 20px;}      
+.logotext{
+    float: left;
+    margin: 2px 0px 5px 10px;
+    text-align: center;}   
+.navigation{
+    margin: 10px auto auto auto;
+    float: right;
+    list-style: none;
+    height: 45px;
+    overflow: none;}
+.navigation ul{
+    float: left;
+    list-style: none;
+    width: 100%;
+    background-color: #3F3215;
+    margin: 0 auto;}    
+.navigation li{
+    float: left;
+    padding: 10px;
+    text-transform: uppercase;}   
+.navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;}
+.topnav{
+    float: right;
+    overflow: hidden;
+    background-color: #4CAF50;}
+.topnav a{
+    float: left;
+    color: #4CAF50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;}
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;}
+.topnav a.active{
+    background-color: #348B9B;
+    color: white;} 
+
+/* Header Part Finishing */
+/* Search Engine Part Starting */
+
+.banner1{
+    margin-top: 85px;
+    padding: 0;  
+    border: solid 1px transparent;
+    width: 100%;
+    height: 500px;
+    background-image: url(../rentimg/banner.jpg);
+    background-size: 100% 100%;}        
+.searchbox{
+    margin: 400px auto 0px auto;
+    width: 70%;
+    background-color: #fff;
+    border: solid 2px #3F3215;
+    padding: 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px;}
+.upper{
+    text-align: center;}    
+.autocomplete{
+    width: 70%;
+    margin: 25px auto 0px auto;
+    border: solid 2px #3F3215;
+    border-radius: 23px;
+    box-shadow: 0 0 0px;
+    position: relative;
+    display: inline-block;}
+.autocomplete:hover{
+    box-shadow: 0 0 10px;}
+.autocomplete input{  
+  border: 1px solid transparent;
+  height: 24px;
+  border-radius: 30px;
+  background-image: url(../rentimg/searchicon.png);
+  background-size: 40px;
+  background-position: 4px 3px;
+  background-repeat: no-repeat;
+  padding: 10px;
+  font-size: 16px;
+  text-indent: 40px;}
+.autocomplete input[type=text]{
+  width: 97%;}
+.upper input[type=submit]{
+  font-family: sans-serif;
+  font-size: 18px;  
+  background-color: #29b5ee;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  height: 51px;
+  border: solid 2px black;
+  border-radius: 30px;}
+.upper input[type=submit]:hover{
+  color: #fff;
+  background-color:  #348B9B;}  
+.autocomplete-items{
+  font-family: sans-serif;  
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;}
+.autocomplete-items div{
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4;}
+/*when hovering an item:*/
+.autocomplete-items div:hover{
+  background-color: #e9e9e9; }
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active{
+  background-color: #29b5ee !important; 
+  color: #fff;}  
+
+/* Search Engine Part Finishing */  
+                 
+.area{
+    margin:0;
+    width: 100%;
+    padding: 0;
+    background-color: #ECF8F9;}
+.clr{
+    clear: both;}   
+.hover_box{
+    background-color: #ECF8F9;
+    width: 16%;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+    text-align: center;}   
+.hover_box img{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    filter: grayscale(100%);
+    box-shadow: 0 0 0px #000;}
+.hover_box:hover img{
+    filter: grayscale(0);
+    box-shadow: 0 0 10px #000;}      
+.hover_box h4{
+    margin-top: 1px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    background-color: #ECF8F9;
+    padding: 1px;
+    box-shadow: 0 0 0px #000;
+    font-family: sans-serif;}   
+.hover_box:hover h4{
+    color: #fff;
+    background-color: green;}
+
+/* Moto Part Starting */
+
+.moto{
+    margin:0;
+    width: 98%;
+    padding: 1%;
+    background-color: #a4a4a4;}
+.moto h1{
+    text-align: center;
+    color: #3F3215;}
+.moto p{
+    font-family: sans-serif;}         
+.hover{
+    background-color: white;
+    width: 23%;
+    padding: 0;
+    margin: 1%;
+    float: left;
+    text-align: center;
+    box-shadow: 0 0 0px #000;}
+.hover:hover{
+    box-shadow: 0 0 10px #000;}       
+.hover img{
+    width: 100%;
+    height: 80%;
+    filter: grayscale(100%);}
+.hover:hover img{
+    filter: grayscale(0);}    
+.hover h1{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: grey;
+    padding: 1px;}   
+.hover:hover h1{
+    background-color: green;}
+
+/* Moto Part Finishing */
+/* Amenities Part Starting */
+
+.amencomp{
+    margin: 5px;
+    width: 98%;
+    padding: 1%;}
+.comp{
+    width: 35%;
+    padding: 2%;
+    float: right;}
+.comp table{
+    box-shadow: 0 0 10px #000;}
+.fa-check{
+    color: green;
+    border: solid 2px green;
+    border-radius: 50%;}         
+td{
+    color: red;
+    font-family: cursive;}
+tr:nth-child(even) {
+    background-color: #f2f2f2;}    
+th:first-child{
+  text-align: left;} 
+
+/* Comparison Table Finish */
+
+.amen{
+    background-image: url(../rentimg/mess1.jpg);
+    background-repeat: no-repeat;
+    height: 455px;
+    width: 57%;
+    padding: 2%;
+    float: left;}
+.amentitle{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 80%;
+    justify-content: flex-start;
+    padding-top: 0;
+    margin: auto 4% auto 4%;}
+.amenhead{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: normal;
+    color: green;
+    margin-bottom: 24.3px;}
+.amensubhead{
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    font-family: sans-serif;
+    line-height: 1.81;
+    letter-spacing: normal;
+    color: grey;
+    margin-bottom: 33px;
+    max-width: 55%;}
+.amengrid{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -318px;
+    margin-left: 50%;
+    margin-right: 5%;}
+.amengridwrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: : center;
+    align-items: center;
+    width: 100%;
+    height: 100%;}
+.amenitems{
+    background: #231815;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffffff17;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.amenimg{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    opacity: 1;} 
+.amenitemtext{
+    opacity: 1;
+    color: white;
+    max-width: 120px;
+    max-height: 50px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    margin-top: 16px;}                                 
+
+/* Amenities and Comparison Part Finishing */
+/* Testimonials Portion Starting */
+
+.testimonials-container{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    margin: 80px 7% 80px 7%;}
+.testimonials-title{
+    opacity: 0.87;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+    margin-left: 1px;
+    margin-bottom: 24px;
+    width: 94px;
+    height: 39px;}
+.slick-slider{
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    box-sizing: border-box;
+    position: relative;
+    display: block;}
+.slick-testimonials-item-prev{
+    right: auto;
+    left: -27px;}
+.slick-testimonials-item-next{
+    position: absolute;
+    padding: 0;
+    line-height: 0;
+    top: 50%;
+    width: 54px;
+    height: 54px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    z-index: 4;}
+.slick-list{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;}
+.testimonial-slider{
+    width: 3000px;}
+.slick-track{
+    width: 3000px;
+    top: 0;
+    left: 0;
+    position: relative;
+    display: block;}
+.testimonial-item-slick-container{
+    display: flex;
+    padding: 16px;
+    background: #e8e8ee;
+    border-radius: 4px;
+    margin: 0 15px 0 0;
+    height: 230px;
+    max-width: 422px;}
+.testimonial-icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 10px;
+    height: fit-content;}
+.testimonial-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+.slick-slide img{
+    display: block;}
+.testimonial-profile-icon{
+    border-radius: 50%;
+    width: 67.2px;
+    height: 67.2px;
+    background: #e8e8ee;}
+.testimonial-item-description__icon-container{
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;}
+.testimonial-item-description__icon{
+    width: 33.3px;
+    height: 28px;}
+.testimonial-item-description{
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #231815;
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 3;
+    max-width: 275px;}                                                            
+
+/* Footer Part Starting */
+    
+footer{
+    background: #3d3d47; 
+    padding: 25px 0 0 0;
+    font-family: sans-serif;}
+footer h2{  
+    color:#dddddd; 
+    font-size: 25px;
+    font-family: sans-serif; 
+    font-weight: 600;}
+footer p{
+    color:#959494; 
+    line-height: 19px; 
+    font-size: 15px;
+    font-family: sans-serif;}
+footer p:hover{
+    color:#29b5ee;}        
+footer ul li{ 
+    color: #959494; 
+    line-height: 30px; 
+    font-size: 13px; 
+    font-weight: 600;} 
+footer ul li a{ 
+    color:#959494; 
+    line-height: 30px;
+    text-decoration: none;}
+footer ul li a:hover{ 
+    color:#29b5ee; 
+    text-decoration: none;
+    line-height: 33px;}
+footer ul{
+    list-style:none;}    
+ul.social_link li{
+    float: left; 
+    margin: 10px 10px 0 0;}
+ul.social_link li a{
+    font-size:22px !important;}
+.clr30{
+    clear: both;
+    height: 30px;}    
+.footbox{
+    width: 100%;}    
+.footrow{
+    width: 80%;
+    margin: 0 auto;}    
+.head{
+    width: 21%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 0 2% 0 2%;} 
+.copyright{
+    background: #25252a;
+    color: #959494; 
+    text-align: center; 
+    font-size: 15px; 
+    padding: 5px 0;
+    margin: 15px 0 0 0;
+    font-weight: 600;}
+
+/* Footer Part Finishing */
+/* Login Form Starting */
+
+/* Full-width input fields */
+.contain input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;  
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f1f1f1;}
+.contain button{
+    font-family: sans-serif;
+    font-size: 17px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;}
+.contain button:hover{
+    opacity: 0.8;}
+/* Extra styles for the cancel button */
+.contain .cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;}
+/* Center the image and position the close button */
+.imgcontainer{
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;}
+img.avatar{
+  width: 40%;
+  border-radius: 50%;}
+.contain{
+  padding: 16px;}
+span.psw{
+  float: right;
+  padding-top: 16px;}
+/* The Modal (background) */
+.modal{
+  font-family: sans-serif;
+  font-size: 16px;  
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 15; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  padding-top: 60px;}
+/* Modal Content/Box */
+.modal-content{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%;} /* Could be more or less, depending on screen size */
+/* The Close Button (x) */
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;}
+.close{
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;}
+.close:hover,
+.close:focus{
+  color: red;
+  cursor: pointer;}
+/* Add Zoom Animation */
+.animate{
+  -webkit-animation:animatezoom 0.6s;
+  animation:animatezoom 0.6s}
+@-webkit-keyframes animatezoom{
+  from {
+    -webkit-transform: scale(0)} 
+  to {
+    -webkit-transform: scale(1)}}
+@keyframes animatezoom {
+  from {
+    transform: scale(0)} 
+  to {
+    transform: scale(1)}}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw{
+    display: block;
+    float: none;}
+  .cancelbtn, .signupbtn{
+    width: 100%;}}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;}
+
+/* Login Form Finishing */

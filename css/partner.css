@@ -1,0 +1,51 @@
+/* Partner Form Starting */
+
+.partner{
+  margin: 86px 30px 20px 30px;  
+  border-radius: 15px;
+  background-image: url(../rentimg/banner.jpg);
+  background-size: 100% 100%;
+  padding: 50px;
+  font-family: sans-serif;
+  color: #fff;}
+.partner input[type=text], input[type=number], select, textarea {
+  width: 80%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: sans-serif;
+  opacity: 0.8;}
+.partner label{
+  padding: 15px auto 15px auto;
+  display: inline-block;}
+.partner input[type=submit]{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;}
+.partner input[type=submit]:hover{
+  background-color: #45a049;}
+.col-25{
+  float: left;
+  width: 25%;
+  margin-top: 6px;}
+.col-75{
+  float: left;
+  width: 75%;
+  margin-top: 6px;}
+/* Clear floats after the columns */
+.row:after{
+  content: "";
+  display: table;
+  clear: both;}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px){
+  .col-25, .col-75, input[type=submit]{
+    width: 100%;
+    margin-top: 0;}}
+
+/* Partner Form Finishing */

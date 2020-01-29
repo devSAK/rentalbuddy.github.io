@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rental Buddy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<div class="header">
+			<div class="logo">
+			<a href="index.html"><img src="rentimg/logo.png"></a>
+		    </div>
+		    <div class="logotext"><h1><font color="#fffff">Rental</font><font color="#70C654"> Buddy</font></h1>
+		    </div>
+		    <ul class="navigation">
+				<li><a href="#"><img src="rentimg/callback.png" height="50px"></a></li>
+				<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="rentimg/wishlist.png" height="50px"></a></li>
+				<li>
+                    <div class="topnav">
+					<a href="partner.html">Partnership</a>
+				    <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+				</div>
+				</li>   
+			</ul>
+		</div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "0";
+  }
+}
+</script>    
+
+<!--Banner Div Starting-->
+
+		<div class="banner1">
+			<div class="searchbox">
+				<div class="upper">
+					<form autocomplete="off" action="/action_page.php">
+			            <div class="autocomplete">
+			        	    <input id="myInput" type="text" name="myCountry" placeholder=" Enter Location or Landmark">
+			            </div>
+			            <input type="submit">
+			        </form>
+
+<script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = [
+"Amity,Kolkata",
+"Hatiara,Kolkata",
+"Haldiram,Kolkata",
+"Chinarpark,Kolkata",
+"Mahammadpur,Kolkata",
+"Park Circus,Kolkata",
+"City Center II,Kolkata",
+"Naopara,Kolkata",
+"Newtown,Kolkata",
+"Belgachiya,Kolkata",
+"Pechar More,Kolkata",
+"Policefari,Kolkata"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+
+			    </div>
+			    <div class="area">
+    	            <div class="hover_box"><a href="mess.html"><img src="rentimg/RentalBuddy.png"></a>
+    	            <h4>Chinarpark</h4>	
+    	            </div>
+    	            <div class="hover_box"><a href="mess.html"><img src="rentimg/RentalBuddy.png"></a>
+    	            <h4>Hatiara</h4>	
+    	            </div>
+    	            <div class="hover_box"><a href="mess.html"><img src="rentimg/mahammad.jpeg"></a>
+    	            <h4>Mahammadpur</h4>
+    	            </div>
+    	            <div class="hover_box"><a href="mess.html"><img src="rentimg/RentalBuddy.png"></a>
+    	            <h4>Naopara</h4>	
+    	            </div>
+    	            <div class="hover_box"><a href="mess.html"><img src="rentimg/RentalBuddy.png"></a>
+    	            <h4>College Street</h4>	
+    	            </div>
+    	            <div class="clr"></div>
+                </div>    
+    	    </div>
+    	    <div class="moto">
+    	    	<h1>Rental Buddy Room's Provide You</h1>
+    	        <div class="hover"><a href="#"><img src="rentimg/comfort.jpg"></a>
+    	        <h1>Comfort and Convenience</h1>
+    	        <p>Furnished Rooms fully managed by Rental Buddy. Just move-in with your bags.</p>	
+    	        </div></a>
+    	        <div class="hover"><a href="#"><img src="rentimg/sequrity.jpg"></a>
+    	        <h1>Safety and Security</h1>
+    	        <p>High-end security with On-call stay supervisor.Just give a call to our Executive.</p>	
+    	        </div>
+    	        <div class="hover"><a href="#"><img src="rentimg/pocket.jpg"></a>
+    	        <h1>Pocket friendly</h1>
+    	        <p>Super affordable rooms on rent available on sharing or private basis anytime.</p>	
+    	        </div>
+    	        <div class="hover"><a href="#"><img src="rentimg/caring.jpg"></a>
+    	        <h1>Caring Community</h1>
+    	        <p>From strangers to BFFs, feel at home with your new friends in our Rental Buddy Room.</p>	
+    	        </div>
+    	        <div class="clr"></div>
+            </div>
+
+<!--Amenities Div Starting-->
+
+            <div class="amencomp">
+            	<div class="amen">
+            		<div class="amentitle">
+            			<span class="amenhead">Amenities</span>
+            			<span class="amensubhead"><b>Enjoy DOZENS OF HAPPINESS with a wide range of amenities in our properties</b></span>
+            		</div>
+            		<div class="amengrid">
+            			<div class="amengridwrapper">
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">WiFi</h5>
+            				</div>
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">CCTV</h5>
+            				</div>
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">DTH</h5>
+            				</div>
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">Washing Machine</h5>
+            				</div>
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">Refrigerator</h5>
+            				</div>
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">RO</h5>
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">Limited Power Backup</h5>
+            				</div>
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">AC</h5>
+            				</div>
+            				<div class="amenitems">
+            					<img class="amenimg">
+            					<h5 class="amenitemtext">TV</h5>
+            				</div>	
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="comp">
+            		<table width="100%" cellspacing="0" bordercolor="black" cellpadding="4">
+    			        <tr>
+    				        <th bgcolor=""><h2><font color="blue">Comparison</font></h2></th>
+    				        <th bgcolor="Yellow"><h2><font color="blue">Rental Buddy</font></h2></th>
+    				        <th bgcolor="Yellow"><h2><font color="blue">Others</font></h2></th>
+    			        </tr>
+    			        <tr>
+    				        <th bgcolor="Grey"><h3>Brokerage</h3></th>
+    				        <td align="center"><b>X</b></td>
+    				        <td align="center"><i class="fa fa-check"></i></td>
+    			        </tr>
+    			        <tr>
+    				        <th bgcolor="Grey"><h3>Security Deposit</th>
+    				        <td align="center"><i class="fa fa-check"></i></td>
+    				        <td align="center"><b>X</b></td>
+    			        </tr>
+    			        <tr>
+    				        <th bgcolor="Grey"><h3>Fully Furnished</h3></th>
+    				       <td align="center"><i class="fa fa-check"></i></td>
+    				        <td align="center"><b>X</b></td>
+    			        </tr>
+    			        <tr>
+    				        <th bgcolor="Grey"><h3>Owner Interference</h3></th>
+    				        <td align="center"><b>X</b></td>
+    				        <td align="center"><i class="fa fa-check"></i></td>
+    			        </tr>
+    			        <tr>
+    				        <th bgcolor="Grey"><h3>Pocket App Enable</h3></th>
+    				        <td align="center"><i class="fa fa-check"></i></td>
+    				        <td align="center"><b>X</b></td>
+    			        </tr>
+    			        <tr>
+    				        <th bgcolor="Grey"><h3>On-call Stay Spervisor</h3></th>
+    				        <td align="center"><i class="fa fa-check"></i></td>
+    				        <td align="center"><b>X</b></td>
+    			        </tr>
+    		        </table>
+            	</div>
+            </div> 				   	
+		</div>
+	</div>
+	<div class="clr"></div>
+
+<!--Testimonial Portaion Starting-->
+
+ <div class="testimonial-main-container">
+   <div arial-busy="false">
+     <div class="testimonials-container" style="display: flex;">
+       <div class="testimonials-title">Testimonials</div>
+       <div class="slick-slider testimonial-slider slick-initialized" dir="ltr">
+         <div class="slick-arrow slick-testimonials-item-next slick-testimonials-item-prev">
+           <div style="border-radius: 50%; padding: 8px; background: white; opacity: 1; height: 54px; width: 54px; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.1) 0 15px 32px 0;">
+             <img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+           </div>
+         </div>
+         <div class="slick-list">
+           <div class="slick-track" style="width: 1870px; opacity: 1; transform: translate3d(0, 0, 0);">
+             <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 374px;">
+               <div>
+                 <div tabindex="-1" style="width: 100%; display: inline-block;">
+                   <div class="testimonial-item-slick-container">
+                     <div class="testimonial-icon-container">
+                       <img class="testimonial-profile-icon" src="rentimg/my.jpeg" alt="#">
+                     </div>
+                     <div class="testimonial-details-container">
+                       <div class="testimonial-item-description__icon-container">
+                         <img class="testimonial-item-description__icon" src="rentimg/descripticon.png">
+                       </div>
+                       <div class="testimonial-item-description">RENTAL BUDDY is a wonderful concept. The facilities and hassle-free accommodation is what makes RENTAL BUDDY Room very interesting.</div>
+                       <div class="testimonial-item-author">SABIR KHAN</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 374px;">
+               <div>
+                 <div tabindex="-1" style="width: 100%; display: inline-block;">
+                   <div class="testimonial-item-slick-container">
+                     <div class="testimonial-icon-container">
+                       <img class="testimonial-profile-icon" src="rentimg/my.jpeg" alt="#">
+                     </div>
+                     <div class="testimonial-details-container">
+                       <div class="testimonial-item-description__icon-container">
+                         <img class="testimonial-item-description__icon" src="rentimg/descripticon.png">
+                       </div>
+                       <div class="testimonial-item-description">RENTAL BUDDY is a wonderful concept. The facilities and hassle-free accommodation is what makes RENTAL BUDDY Room very interesting.</div>
+                       <div class="testimonial-item-author">SK AHESAN</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 374px;">
+               <div>
+                 <div tabindex="-1" style="width: 100%; display: inline-block;">
+                   <div class="testimonial-item-slick-container">
+                     <div class="testimonial-icon-container">
+                       <img class="testimonial-profile-icon" src="rentimg/my.jpeg" alt="#">
+                     </div>
+                     <div class="testimonial-details-container">
+                       <div class="testimonial-item-description__icon-container">
+                         <img class="testimonial-item-description__icon" src="rentimg/descripticon.png">
+                       </div>
+                       <div class="testimonial-item-description">RENTAL BUDDY is a wonderful concept. The facilities and hassle-free accommodation is what makes RENTAL BUDDY Room very interesting.</div>
+                       <div class="testimonial-item-author">RAAZ</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div data-index="3" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 374px;">
+               <div>
+                 <div tabindex="-1" style="width: 100%; display: inline-block;">
+                   <div class="testimonial-item-slick-container">
+                     <div class="testimonial-icon-container">
+                       <img class="testimonial-profile-icon" src="rentimg/my.jpeg" alt="#">
+                     </div>
+                     <div class="testimonial-details-container">
+                       <div class="testimonial-item-description__icon-container">
+                         <img class="testimonial-item-description__icon" src="rentimg/descripticon.png">
+                       </div>
+                       <div class="testimonial-item-description">RENTAL BUDDY is a wonderful concept. The facilities and hassle-free accommodation is what makes RENTAL BUDDY Room very interesting.</div>
+                       <div class="testimonial-item-author">SABIR KHAN</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div data-index="4" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 374px;">
+               <div>
+                 <div tabindex="-1" style="width: 100%; display: inline-block;">
+                   <div class="testimonial-item-slick-container">
+                     <div class="testimonial-icon-container">
+                       <img class="testimonial-profile-icon" src="rentimg/my.jpeg" alt="#">
+                     </div>
+                     <div class="testimonial-details-container">
+                       <div class="testimonial-item-description__icon-container">
+                         <img class="testimonial-item-description__icon" src="rentimg/descripticon.png">
+                       </div>
+                       <div class="testimonial-item-description">RENTAL BUDDY is a wonderful concept. The facilities and hassle-free accommodation is what makes RENTAL BUDDY Room very interesting.</div>
+                       <div class="testimonial-item-author">SABIR KHAN</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="slick-arrow slick-testimonials-item-next">
+           <div style="border-radius: 50%; padding: 8px; background: white; opacity: 1; height: 54px; width: 54px; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.1) 0 15px 32px 0;">
+             <img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+           </div>
+         </div>
+       </div>
+     </div>
+     <span></span>
+   </div>
+ </div>
+ <div class="clr"></div>  
+
+<!--Amenities Div Finishing-->
+<!--Login Form Starting-->
+
+	<div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="rentimg/logo.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="contain">
+                <label for="uname"><b>Email Id</b></label>
+                <input type="text" placeholder="Enter Email" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="contain" style="background-color:#f1f1f1;">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="sign">Don't have an Account? <a href="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</a></span>
+                <span class="psw">Forget <a href="#">Password?</a></span>
+            </div>
+        </form>
+    </div>
+
+<!--Login Form Finishing-->
+<!--Signup Form Starting-->
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" href="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!--Signup Form Finishing-->
+<!--Footer Portion Starting-->
+
+	<footer>
+		 <div class="footbox">
+		    <div class="footrow">
+		    	<div class="head">
+		    		<h2>About Us</h2>
+		    		<p align="justify">Rental Buddy’s secret sauce design cool, in spaces whenever you need them, at fantastic prices.We’ve perfected the upcycling of neighbourhoods and the makeover of streets and properties.A cool design aesthetic with comfortable spaces.Crisp sheets, power-washed bathrooms the world with any Rental Buddy stay.
+		    		</p>
+		    		<div class="clr30"></div>
+		    		<ul class="social_link">
+		    			<li>
+		    				<a href="https://www.facebook.com"target="_blank">
+		    					<i class="fab fa-facebook-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-google-plus-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-twitter-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-linkedin">
+		    					</i>
+		    				</a>
+		    			</li>
+		    		</ul>
+		    		<div class="clr"></div>
+                </div>	
+		    	<div class="head">
+		    		<h2>Find RB in</h2>
+		    		<ul>
+		    			<li><a href="mess.html">Chinarpark</a></li>
+		    			<li><a href="mess.html">Hatiara</a></li>
+		    		  <li><a href="mess.html">Mahammadpur</a></li>
+		    			<li><a href="mess.html">Naopara</a></li>
+		    			<li><a href="mess.html">Haldiram</a></li>
+		    			<li><a href="mess.html">Amity</a></li>
+		    			<li><a href="mess.html">Park Circus</a></li>
+		    			<li><a href="mess.html">Belgachiya</a></li>
+		    			<li><a href="mess.html">Sealdah</a></ll>
+		    		</ul>
+		    	</div>	
+		    	<div class="head">
+		    		<h2>Quick link</h2>
+		    		<ul>
+		    			<li>
+		    			<li><a href="index.html">Home</a></li>
+		    			<li><a href="#">About Us</a></li>
+		    			<li><a href="#">Privacy Policy</a></li>
+		    			<li><a href="https://drive.google.com/open?id=1rkX_LI2b9SMziNzY8zpI4i10oC3ykovL">Guest Policies</a></li>
+		    			<li><a href="https://drive.google.com/open?id=1MiAQnfs8VYyK6HkbluPG4lk1U2rWFizs">Partner Policies</a></li>
+		    			<li><a href="partner.html">Partner with Us</a></li>
+		    			<li><a href="#">Blog</a></li>
+		    			<li><a href="#">Testimonial</a></li>
+		    			<li><a href="faq.html">FAQs</a></li>
+		    		</ul>
+		    	</div>
+		    	<div class="head">
+		    		<h2>Contact Us</h2>
+		    		<ul>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-globe">
+		    					</i> www.rentalbuddy.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-envelope">
+		    					</i> info@rentalbuddy.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-envelope">
+		    					</i> rentalbuddy@gmail.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-phone-square">
+		    					</i> +91 89101 82013
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-clock">
+		    					</i> Contact Time : 24*7
+		    				</a>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="clr"></div>
+		</div>	
+		    <p class="copyright">Copyright © 2019 rentalbuddy.com - All Rights Reserved
+		    </p>	
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rental Buddy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/room.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<div class="app">
+			<div class="main-app-content">
+	            <div class="header">
+			        <div class="logo">
+			        <a href="index.html"><img src="rentimg/logo.png"></a>
+		            </div>
+		            <div class="logotext"><h1 style="font-size: 32px;"><font color="#fffff">Rental</font><font color="#70C654"> Buddy</font></h1>
+		            </div>
+		            <ul class="navigation">
+				        <li><a href="#"><img src="rentimg/callback.png" height="50px"></a></li>
+				        <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="rentimg/wishlist.png" height="50px"></a></li>
+				        <li>
+                            <div class="topnav">
+					        <a href="partner.html">Partnership</a>	
+				            <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+				        </div>
+				        </li>   
+			        </ul>
+		        </div>
+		        <div class="clr"></div>
+		        <div class="app-body">
+		        	<div>
+		        		<div id="prop-details-main-content" style="padding-bottom: 24px;">
+		        		    <div class="prop-detail-breadcrumb-container">
+    		                    <span class="prop-detail-breadcrumb-text"><a href="index.html" style="text-decoration: none;">Home</a></span>
+    		                    <img class="prop-detail-breadcrumb-arrow-icon" src="rentimg/cavronright.png" alt="Drop Down Arrow">
+    		                    <span class="prop-detail-breadcrumb-text"><a href="index.html" style="text-decoration: none;">Hatiara</a></span>
+    		                    <img class="prop-detail-breadcrumb-arrow-icon" src="rentimg/cavronright.png" alt="Drop Down Arrow">
+    		                    <span class="prop-detail-breadcrumb-text prop-detail-breadcrumb-text__final">RB KOL0001 Hatiara</span>
+    	                    </div>
+    	                    <div arial-busy="false">
+    	                    	<div id="div-property-details">
+    	                    		<div class="prop-details-carousel-image-container">
+    	                    			<div>
+    	                    				<div class="slick-slider hpi-slider-details-page-container slick-initialized" dir="ltr">
+    	                    					<div class="slick-arrow slick-house-parts-images-item-prev slick-house-parts-images-item-next">
+    	                    						<div style="border-radius: 50%; padding: 8px; background: rgba(0, 0, 0, 0.4); opacity: 1; height: 54px; width: 54px; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.1) 0 15px 32px 0;">
+    	                    							<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                    						</div>
+    	                    					</div>
+    	                    					<div class="slick-list">
+    	                    						<div class="slick-track" style="width: 28160px; opacity: 1; transform: translate3d(0, 0, 0);">
+    	                    							<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" arial-hidden="false" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="0" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="1" class="slick-slide slick-active" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="1" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="2" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="2" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="3" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="3" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="4" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="4" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="5" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="5" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="6" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="6" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="7" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="7" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="8" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="8" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="9" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="9" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    							<div data-index="10" class="slick-slide" tabindex="-1" arial-hidden="true" style="outline: none; width: 1280px;">
+    	                    								<div>
+    	                    									<img id="10" class="living-part-details-page-image-item" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    								</div>
+    	                    							</div>
+    	                    						</div>
+    	                    					</div>
+    	                    					<div class="slick-arrow slick-house-parts-images-item-next">
+    	                    					    <div style="border-radius: 50%; padding: 8px; background: rgba(0, 0, 0, 0.4); opacity: 1; height: 54px; width: 54px; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.1) 0 15px 32px 0;">
+    	                    					    		<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                    					    </div>
+    	                    					</div>
+    	                    				</div>
+    	                    				<div class="hpi-slider-count-details-page-container">1/14</div>
+    	                    				<div class="hpi-tags-details-page-container">
+    	                    				    <div class="hpi-tags-item hpi-tags-item__active">
+    	                    				    	<p class="hpi-tags-item-text">Room</p>
+    	                    				    </div>
+    	                    				    <div class="hpi-tags-item">
+    	                    				    	<p class="hpi-tags-item-text">Washroom</p>
+    	                    				    </div>
+    	                    				    <div class="hpi-tags-item">
+    	                    				    	<p class="hpi-tags-item-text">Dining</p>
+    	                    				    </div>
+    	                    				    <div class="hpi-tags-item">
+    	                    				    	<p class="hpi-tags-item-text">Kitchen</p>
+    	                    				    </div>
+    	                    				    <div class="hpi-tags-item">
+    	                    				    	<p class="hpi-tags-item-text">+5</p>
+    	                    				    </div>
+    	                    				</div>
+    	                    			</div>
+    	                    			<div class="property-detail-share-container">
+    	                    			    <button class="share-btn">
+    	                    			    	<img src="rentimg/share.png">
+    	                    			    </button>
+    	                    			</div>
+    	                    		</div>
+    	                    		<div class="carousel-image-mobile-container">
+    	                    		    <div class="carousel-image-viewer">
+    	                    		    	<div class="slick-slider slick-initialized" dir="ltr">
+    	                    		    		<div class="slick-arrow slick-my-prev">
+    	                    		    			<img src="rentimg/cavronleft.png" alt="Left Arrow">
+    	                    		    		</div>
+    	                    		    		<div class="slick-list">
+    	                    		    			<div class="slick-track" style="opacity: 1; transform: translate3d(0, 0, 0);">
+    	                    		    				<div data-index="-1" tabindex="-1" class="slick-slide slick-active slick-cloned" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="0" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="1" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="2" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="3" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="4" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="5" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="6" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="7" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="8" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="9" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="10" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="11" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="12" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="13" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="14" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    				<div data-index="15" tabindex="-1" class="slick-slide" arial-hidden="false" style="width: 0;">
+    	                    		    					<div>
+    	                    		    						<img class="carousel-image-viewer-image" src="rentimg/mess2.jpg" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    		    					</div>
+    	                    		    				</div>
+    	                    		    			</div>
+    	                    		    		</div>
+    	                    		    		<div class="slick-arrow slick-my-next">
+    	                    		    			<img src="rentimg/cavronright.png" alt="Right Arrow">
+    	                    		    		</div>
+    	                    		    	</div>
+    	                    		    </div>
+    	                    		    <div class="carousel-images-mobile-div">
+    	                    		    	<img src="rentimg/cavronright.png" alt="Arrow Right" style="height: 44px; border-radius: 50%;">
+    	                    		    </div>
+    	                    		</div>
+    	                    		<div id="rent-schedule-visit-box">
+    	                    			<div>
+    	                    				<div></div>
+    	                    			</div>
+    	                    			<div id="rent-box-div">
+    	                    				<div class="rent-box-cards-wrapper" arial-busy="false">
+    	                    					<div class="occupancy-title">Occupancy</div>
+    	                    					<div class="occupancy-prices-container">
+    	                    						<div class="occupancy-sharing-prices-container">
+    	                    							<div class="occupancy-prices-item-container">
+    	                    								<div class="occupancy-prices-item-description-container">
+    	                    									<div class="occupancy-prices-item-price-container">
+    	                    										<div class="occupancy-prices-item-price">₹ 1200
+    	                    										</div>
+    	                    										<div class="occupancy-prices-item-price__desc">/month onwards</div>
+    	                    									</div>
+    	                    									<div class="occupancy-prices-item-type">Twin Sharing</div>
+    	                    								</div>
+    	                    								<div class="occupancy-prices-item-icons-container">
+    	                    									<div class="occupancy-prices-item-icon-wrapper">
+    	                    										<img src="rentimg/bed.png" style="height: 44px; border-radius: 50%;">
+    	                    									</div>
+    	                    									<div class="occupancy-prices-item-icon-wrapper">
+    	                    										<p class="occupancy-prices-item-icon-bed-count">X2</p>
+    	                    									</div>
+    	                    								</div>
+    	                    							</div>
+    	                    						</div>
+    	                    						<div class="occupancy-prices-item-container">
+    	                    							<div class="occupancy-prices-item-description-container">
+    	                    								<div class="occupancy-prices-item-price-container">
+    	                    								    <div class="occupancy-prices-item-price">₹ 2400    
+    	                    								    </div>
+    	                    								    <div class="occupancy-prices-item-price__desc">/month onwards</div>
+    	                    							    </div>
+    	                    							    <div class="occupancy-prices-item-type">Private Room</div>
+    	                    						    </div>
+    	                    						    <div class="occupancy-prices-item-icons-container">
+    	                    							    <div class="occupancy-prices-item-icon-wrapper">
+    	                    								    <img src="rentimg/door.png" style="height: 44px; border-radius: 50%;">
+    	                    							    </div>
+    	                    						    </div>
+    	                    					    </div>	
+    	                    					    <div class="occupancy-prices-statement">+ 1 Month Security Deposit on each Occupancy</div>
+    	                    				    </div>
+    	                    			        <div>
+    	                    			    	    <label class="date-time-picker-label-wrapper">
+    	                    			    		    <div class="date-picker-group">
+    	                    			    			    <img src="rentimg/callendar.png" alt="Calendar" class="calendar-image" height="35px">
+    	                    			    			    <div class="react-datepicker-wrapper">
+    	                    			    				    <div class="react-datepicker__input-container">
+    	                    			    					    <button value placeholder="Choose date and time" class="date-time-box">Choose date and time</button>
+    	                    			    				    </div>
+    	                    			    			    </div>
+    	                    			    		    </div>
+    	                    			    	    </label>
+    	                    			    	    <button class="date-time-cta_button date-time-cta_button_enabled">Schedule Free Visit</button>
+    	                    			    	    <div class="disclaimer_div">
+    	                    			    		    <h5 class="login-importance-text">DIsclaimer: We will send you messages over SMS/WhatsApp</h5>
+    	                    			    	    </div>
+    	                    			        </div>
+    	                    		            <span></span>
+    	                    	            </div>
+    	                    		    </div>
+    	                    		    <button class="button-white-common date-time-cta_button date-time-cta_button_enabled" style="margin-top:
+    	                    		10px;">Pay to Book</button>
+    	                    	    </div>
+    	                    	    <div class="div-top-details">
+    	                    		<div style="display: flex; justify-content: space-between;">
+    	                    			<h1 id="property-name">RB KOL0001 Hatiara</h1>
+    	                    		</div>
+    	                    		<div>
+    	                    			<h3 id="property-address">Alkash More, Hatiara Gote, Kolkata-700156, West Bengal</h3>
+    	                    		</div>
+    	                    	</div>
+    	                    	<div>
+    	                    		<div class="discount-div">
+    	                    			<div class="bed-details-div">
+    	                    				<img src="rentimg/offers.png" style="width: 45px; height: 45px; padding-right: 8px; margin-top: -4px;">
+    	                    				<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 18px; margin-top: 2px; max-width: 58%;">₹ 500 OFF on 1st month's rent. Use Code: RBFIRST. Book your bed before 13th Oct, hurry!</h5>
+    	                    			</div>
+    	                    		</div>
+    	                    	</div>
+    	                    	<div class="property-details-tags-container">
+    	                    		<img class="property-details-gender-tag" src="rentimg/gender.jpg" style="height: 32px;">
+    	                    		<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                    			<img src="rentimg/offer.png" class="undefined button-side-image">
+    	                    			Filling up fast
+    	                    		</div>
+    	                    	</div>
+    	                    	<div class="div-middle-details">
+    	                    		<div id="details-tab-sticky" class="tabCustomStyle tabCustomStyle-transition__helper">
+    	                    			<ul role="tablist" class="nav nav-tabs">
+    	                    				<li role="presentation" class="active">
+    	                    					<a id="details-tab-sticky-tab-1" role="tab" arial-controls="details-tab-sticky-pane-1" arial-selected="true" href="#">Amenities</a>
+    	                    				</li>
+    	                    				<li role="presentation" class>
+    	                    					<a id="details-tab-sticky-tab-2" role="tab" arial-controls="details-tab-sticky-pane-2" tabindex="-1" arial-selected="false" href="#">Overview</a>
+    	                    				</li>
+    	                    				<li role="presentation" class>
+    	                    					<a id="details-tab-sticky-tab-3" role="tab" arial-controls="details-tab-sticky-pane-3" tabindex="-1" arial-selected="false" href="#">Locate</a>
+    	                    				</li>
+    	                    				<li role="presentation" class>
+    	                    					<a id="details-tab-sticky-tab-4" role="tab" arial-controls="details-tab-sticky-pane-4" tabindex="-1" arial-selected="false" href="#">Properties</a>
+    	                    				</li>
+    	                    			</ul>
+    	                    			<div class="tab-content">
+    	                    				<div id="details-tab-sticky-pane-1" aria-labelledby="details-tab-sticky-tab-1" role="tabpanel" aria-hidden="false" class="fade tab-pane active in"></div>
+    	                    				<div id="details-tab-sticky-pane-2" aria-labelledby="details-tab-sticky-tab-2" role="tabpanel" aria-hidden="true" class="fade tab-pane active in"></div>
+    	                    				<div id="details-tab-sticky-pane-3" aria-labelledby="details-tab-sticky-tab-3" role="tabpanel" aria-hidden="true" class="fade tab-pane active in"></div>
+    	                    				<div id="details-tab-sticky-pane-4" aria-labelledby="details-tab-sticky-tab-4" role="tabpanel" aria-hidden="true" class="fade tab-pane active in"></div>
+    	                    			</div>
+    	                    		</div>
+    	                    		<div class="div-amenities">
+    	                    			<h2 id="amenities">Amenities</h2>
+    	                    			<div id="amenities-container" class="amenitiesTabCustomStyle">
+    	                    				<ul role="tablist" class="nav nav-tabs">
+    	                    					<li role="presentation" class="active">
+    	                    						<a id="amenities-container-tab-1" role="tab" arial-controls="amenities-container-pane-1" arial-selected="true" href="#">Building Amenities</a>
+    	                    					</li>
+    	                    					<li role="presentation" class>
+    	                    						<a id="amenities-container-tab-2" role="tab" arial-controls="amenities-container-pane-2" arial-selected="false" href="#">Bedroom</a>
+    	                    					</li>
+    	                    					<li role="presentation" class>
+    	                    						<a id="amenities-container-tab-3" role="tab" arial-controls="amenities-container-pane-3" arial-selected="false" href="#">Living Area</a>
+    	                    					</li>
+    	                    					<li role="presentation" class>
+    	                    						<a id="amenities-container-tab-4" role="tab" arial-controls="amenities-container-pane-4" arial-selected="false" href="#">Kitchen</a>
+    	                    					</li>
+    	                    					<li role="presentation" class>
+    	                    						<a id="amenities-container-tab-5" role="tab" arial-controls="amenities-container-pane-5" arial-selected="false" href="#">Washroom</a>
+    	                    					</li>
+    	                    				</ul>
+    	                    				<div class="tab-content">
+    	                    					<div id="amenities-container-pane-1"
+    	                    					aria-labelledby="amenities-container-tab-1" role="tabpanel" aria-hidden="false" class="fade tab-pane active in">
+    	                    						<div style="display: flex; background: rgba(255, 255, 255, 0); margin-top: 30px;">
+    	                    							<div id="icon_text_grid">
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Lift</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Limited Power Backup</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Free Wifi</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Parking</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">CCTV</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Fire Extinguisher</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Refrigerator</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Washing Machine</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="lift amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Microwave</h5>
+    	                    								</div>
+    	                    							</div>
+    	                    						</div>
+    	                    					</div>
+    	                    					<div id="amenities-container-pane-2"
+    	                    					aria-labelledby="amenities-container-tab-2" role="tabpanel" aria-hidden="true" class="fade tab-pane">
+    	                    						<div style="display: flex; background: rgba(255, 255, 255, 0); margin-top: 30px;">
+    	                    							<div id="icon_text_grid">
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="bed amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Bed with Mattress</h5>
+    	                    								</div>
+    	                    							</div>
+    	                    						</div>
+    	                    					</div>
+    	                    					<div id="amenities-container-pane-3"
+    	                    					aria-labelledby="amenities-container-tab-3" role="tabpanel" aria-hidden="true" class="fade tab-pane">
+    	                    						<div style="display: flex; background: rgba(255, 255, 255, 0); margin-top: 30px;">
+    	                    							<div id="icon_text_grid">
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="tv amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">TV</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="dining area amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Dining Area</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="tv amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">TV with DTH</h5>
+    	                    								</div>
+    	                    							</div>
+    	                    						</div>
+    	                    					</div>
+    	                    					<div id="amenities-container-pane-4"
+    	                    					aria-labelledby="amenities-container-tab-4" role="tabpanel" aria-hidden="true" class="fade tab-pane">
+    	                    						<div style="display: flex; background: rgba(255, 255, 255, 0); margin-top: 30px;">
+    	                    							<div id="icon_text_grid">
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="induction amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Induction Plate</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="refrigerator amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Refrigerator</h5>
+    	                    								</div>
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="microwave amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Microwave</h5>
+    	                    								</div>
+    	                    							</div>
+    	                    						</div>
+    	                    				    </div>
+    	                    				    <div id="amenities-container-pane-5"
+    	                    					aria-labelledby="amenities-container-tab-5" role="tabpanel" aria-hidden="true" class="fade tab-pane">
+    	                    						<div style="display: flex; background: rgba(255, 255, 255, 0); margin-top: 30px;">
+    	                    							<div id="icon_text_grid">
+    	                    								<div style="display: flex; flex-direction: row; height: fit-content;">
+    	                    									<img src="rentimg/door.png" alt="hot water amenities" style="opacity: 0.7; height: 50px;">
+    	                    									<h5 class="small_icon_grid_text" style="opacity: 0.54;">Geyser</h5>
+    	                    								</div>
+    	                    							</div>
+    	                    						</div>
+    	                    					</div>
+    	                    			    </div>
+    	                    		    </div>
+    	                    	    </div>
+    	                    	    <div>
+    	                    	    	<h2 id="about-space">About the property</h2>
+    	                    	    	<p id="property-desc">
+    	                    	    		<div class="property-desc-inner-container" style="height: 150px;">Situated in a prime locality, this house has everything you need. All you need to do is pack your bags and move-in. Do your thing and leave all the maintenance hassles to us.<br>
+    	                    	    			<p>What's nearby/Your New Neighborhood</p>
+    	                    	    			<p>Corporate/Institutes:</p>
+    	                    	    			<p>(Tech Park/Business Center/Company)</p>
+    	                    	    			<ul>
+    	                    	    				<li>
+    	                    	    					<p>1.0 Kms from Wipro SEZ</p>
+    	                    	    				</li>
+    	                    	    			</ul>
+    	                    	    			<p>(College/Coaching/University/BS)</p>
+    	                    	    			<ul>
+    	                    	    				<li>
+    	                    	    					<p>3.5 Kms from Aliah University</p>
+    	                    	    				</li>
+    	                    	    				<li>
+    	                    	    					<p>2.5 Kms from Naopara BS</p>
+    	                    	    				</li>
+    	                    	    			</ul>
+    	                    	    			<p>Lifestyle: Restaurants/Shopping Malls</p>
+    	                    	    			<ul>
+    	                    	    				<li>
+    	                    	    					<p>350 Mtrs from Afiya Rolls Restaurant</p>
+    	                    	    				</li>
+    	                    	    			</ul>
+    	                    	    			<p>There's more - gyms, grocery stores, multiple ATMs, transportation facilities, and a few eateries are all at a walkable distance.</p>
+    	                    	    			<p>(Note: We do not provide bed sheets, pillow covers, bean bags, other decorative items for bedrooms. Residents are requested to bring their own personal items and simply plug into RENTAL BUDDY Room.)</p>
+    	                    	    		</div>
+    	                    	    		<p class="property-desc-inner-read-more">...Read More</p>
+    	                    	    	</p>
+    	                    	    </div>
+    	                    	    <div>
+    	                    	    	<h2 id="locate-space">Locate nearby places</h2>
+    	                    	    	<iframe id="locate-space-container" src="https://maps.google.com/maps?q=12.893993, 77.718254&z=15&output=embed" width="100%" height="400" frameborder="0" style="width: 90%; margin-left: 12%; margin-top: 10px; border: 0;">
+
+    	                    	    	</iframe>
+    	                    	    </div>
+    	                    	    <div id="similar-properties">
+    	                    	    	<div arial-busy="false" style="width: 100%;">
+    	                    	    		<h2 class="similar-properties-title">Similar Properties</h2>
+    	                    	    		<div style="margin-left: 12%; width: 90%;">
+    	                    	    			<div class="slick-slider slick-initialized" dir="ltr">
+    	                    	    				<div class="slick-arrow slick-sim-prop-item-next slick-sim-prop-item-prev">
+    	                    	    					<div style="border-radius: 50%; padding: 8px; background: white; opacity: 1; height: 54px; width: 54px; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.1) 0 15px 32px 0;">
+    	                    	    						<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                    	    					</div>
+    	                    	    				</div>
+    	                    	    				<div class="slick-list">
+    	                    	    					<div class="slick-track" style="width: 2490px; opacity: 1; transform: translate3d(0, 0, 0);">
+    	                    	    						<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+    	                    	    						<div data-index="1" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+    	                    	    						<div data-index="2" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+                                                            <div data-index="3" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+                                                            <div data-index="4" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+                                                            <div data-index="5" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+                                                            <div data-index="6" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+                                                            <div data-index="7" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+                                                            <div data-index="8" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+                                                            <div data-index="9" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+                                                            <div data-index="10" class="slick-slide slick-active" tabindex="-1" arial-hidden="false" style="outline: none; width: 249px;">
+    	                    	    							<div>
+    	                    	    								<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                    	    									<div class="similar-properties-slick-item-container">
+    	                    	    										<img class="similar-properties-slick-item-image" src="rentimg/mess2.jpg">
+    	                    	    										<div class="similar-properties-slick-item-name">RB KOL0002 Hatiara</div>
+    	                    	    										<div class="similar-properties-slick-item-address">Jamia Masjid, Hatiara Gote, Kolkata-700156, West Bengal</div>
+    	                    	    										<div class="similar-properties-slick-item-price">₹ 1500
+    	                    	    											<div class="similar-properties-slick-item-price-label">onwards</div>
+    	                    	    										</div>
+    	                    	    									</div>
+    	                    	    								</div>
+    	                    	    							</div>
+    	                    	    						</div>
+    	                    	    					</div>
+    	                    	    				</div>
+    	                    	    				<div class="slick-arrow slick-sim-prop-item-next">
+    	                    	    					<div style="border-radius: 50%; padding: 8px; background: white; opacity: 1; height: 54px; width: 54px; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.1) 0 15px 32px 0;">
+    	                    	    						<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                    	    					</div>
+    	                    	    				</div>
+    	                    	    			</div>
+    	                    	    		</div>
+    	                    	    	</div>
+    	                    	    	<span></span>
+    	                    	    </div>
+    	                    	</div>
+    	                    	<hr class="bottom-separator">
+    	                    </div>
+    	                </div>
+    	                <div class="bottom-request-a-callback">
+    	                	<div style="display: flex; width: 100%; flex-direction: row; padding: 16px; justify-content: space-around;">
+    	                		<div class="button-white-common buttom-buttons button-main-style button-large-style">Pay to Book</div>
+    	                		<div class="schedule-a-visit-button-bottom button-green-common buttom-buttons button-main-style button-large-style">Schedule Free Visit</div>
+    	                	</div>
+    	                </div>
+    	                <span></span>
+    	            </div>
+    	        </div>
+    	    </div>
+
+ <!--Login Form Starting-->
+
+	<div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="rentimg/logo.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="contain">
+                <label for="uname"><b>Email Id</b></label>
+                <input type="text" placeholder="Enter Email" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="contain" style="background-color:#f1f1f1;">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="sign">Don't have an Account? <a href="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</a></span>
+                <span class="psw">Forget <a href="#">Password?</a></span>
+            </div>
+        </form>
+    </div>
+
+<!--Login Form Finishing-->
+
+    	    <div style="display: flex; flex-direction: column;">
+    	    	<hr style="margin-left: 7%; margin-right: 7%; margin-top: 80px; border-top: 2.3px solid rgb(231, 231, 231);">
+    	    	<footer>
+		 <div class="footbox">
+		    <div class="footrow">
+		    	<div class="head">
+		    		<h2>About Us</h2>
+		    		<p align="justify">Rental Buddy’s secret sauce design cool, in spaces whenever you need them, at fantastic prices.We’ve perfected the upcycling of neighbourhoods and the makeover of streets and properties.A cool design aesthetic with comfortable spaces.Crisp sheets, power-washed bathrooms the world with any Rental Buddy stay.
+		    		</p>
+		    		<div class="clr30"></div>
+		    		<ul class="social_link">
+		    			<li>
+		    				<a href="https://www.facebook.com"target="_blank">
+		    					<i class="fab fa-facebook-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-google-plus-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-twitter-square">
+		    					</i>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fab fa-linkedin">
+		    					</i>
+		    				</a>
+		    			</li>
+		    		</ul>
+		    		<div class="clr"></div>
+                </div>	
+		    	<div class="head">
+		    		<h2>Find RB in</h2>
+		    		<ul>
+		    			<li><a href="mess.html">Chinarpark</a></li>
+		    			<li><a href="mess.html">Hatiara</a></li>
+		    		   	<li><a href="mess.html">Mahammadpur</a></li>
+		    			<li><a href="mess.html">Naopara</a></li>
+		    			<li><a href="mess.html">Haldiram</a></li>
+		    			<li><a href="mess.html">Amity</a></li>
+		    			<li><a href="mess.html">Park Circus</a></li>
+		    			<li><a href="mess.html">Belgachiya</a></li>
+		    			<li><a href="mess.html">Sealdah</a></ll>
+		    		</ul>
+		    	</div>	
+		    	<div class="head">
+		    		<h2>Quick link</h2>
+		    		<ul>
+		    			<li>
+		    			<li><a href="index.html">Home</a></li>
+		    			<li><a href="#">About Us</a></li>
+		    			<li><a href="#">Privacy Policy</a></li>
+		    			<li><a href="https://drive.google.com/open?id=1rkX_LI2b9SMziNzY8zpI4i10oC3ykovL">Guest Policies</a></li>
+		    			<li><a href="https://drive.google.com/open?id=1MiAQnfs8VYyK6HkbluPG4lk1U2rWFizs">Partner Policies</a></li>
+		    			<li><a href="partner.html">Partner with Us</a></li>
+		    			<li><a href="#">Blog</a></li>
+		    			<li><a href="#">Testimonial</a></li>
+		    			<li><a href="faq.html">FAQs</a></li>
+		    		</ul>
+		    	</div>
+		    	<div class="head">
+		    		<h2>Contact Us</h2>
+		    		<ul>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-globe">
+		    					</i> www.rentalbuddy.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-envelope">
+		    					</i> info@rentalbuddy.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-envelope">
+		    					</i> rentalbuddy@gmail.com
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-phone-square">
+		    					</i> +91 89101 82013
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">
+		    					<i class="fas fa-clock">
+		    					</i> Contact Time : 24*7
+		    				</a>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="clr"></div>
+		</div>	
+		    <p class="copyright">Copyright © 2019 rentalbuddy.com - All Rights Reserved
+		    </p>	
+    </footer>
+    	    </div>
+</body>
+</html>    	        

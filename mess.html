@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rental Buddy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mess.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<div class="app">
+			<div class="main-app-content">
+	            <div class="header">
+			        <div class="logo">
+			        <a href="index.html"><img src="rentimg/logo.png"></a>
+		            </div>
+		            <div class="logotext"><h1 style="font-size: 32px;"><font color="#fffff">Rental</font><font color="#70C654"> Buddy</font></h1>
+		            </div>
+		            <ul class="navigation">
+				        <li><a href="#"><img src="rentimg/callback.png" height="50px"></a></li>
+				        <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="rentimg/wishlist.png" height="50px"></a></li>
+				        <li>
+                            <div class="topnav">
+					        <a href="partner.html">Partnership</a>	
+				            <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+				        </div>
+				        </li>   
+			        </ul>
+		        </div>
+		        <div class="clr"></div>
+		        <div class="app-body">
+		        	<div>
+    	                <div class="prop-listing-breadcrumb-container">
+    		                <span class="prop-listing-breadcrumb-text"><a href="index.html" style="text-decoration: none;">Home</a></span>
+    		                <img class="prop-listing-breadcrumb-arrow-icon" src="rentimg/cavronright.png" alt="Drop Down Arrow">
+    		                <span class="prop-listing-breadcrumb-text prop-listing-breadcrumb-text__final">Hatiara</span>
+    	                </div>
+    	                <div class="main-div_listing">
+    	                	<div class="property-filter-desktop-container">
+    	                		<div class="mobile-container">
+    	                			<div class="filters-container">
+    	                				<div>
+    	                					<div class="default-text-style text-large undefined boldize black-text">Filters</div>
+    	                					<div>
+    	                						<div class>
+    	                							<div class="desktop-filter-items-row">
+    	                								<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                								<div class="default-text-style text-small desktop-filter-item-label-text black-text">Offers</div>
+    	                							</div>
+    	                						</div>
+    	                					</div>
+    	                					<hr class="separator">
+    	                				</div>
+    	                				<div>
+    	                					<div class="default-text-style text-large filter-desktop-group-label">Gender</div>
+    	                					<div class>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">Boys only</div>
+    	                						</div>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">Girls only</div>
+    	                						</div>
+    	                					</div>
+    	                					<hr class="separator">
+    	                				</div>
+    	                				<div>
+    	                					<div class="default-text-style text-large filter-desktop-group-label">Monthly Rent</div>
+    	                					<div class>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">< ₹1,500</div>
+    	                						</div>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">₹1,500 - ₹3,000</div>
+    	                						</div>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">₹3,000 - ₹5,000</div>
+    	                						</div>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">> ₹5,000</div>
+    	                						</div>
+    	                					</div>
+    	                					<hr class="separator">
+    	                				</div>
+    	                				<div>
+    	                					<div class="default-text-style text-large filter-desktop-group-label">Occupancy</div>
+    	                					<div class>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">Single</div>
+    	                						</div>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">Double</div>
+    	                						</div>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">Triple</div>
+    	                						</div>
+    	                						<div class="desktop-filter-items-row">
+    	                							<img src="rentimg/uncheckbox.png" class="filter-desktop-status-image">
+    	                							<div class="default-text-style text-small desktop-filter-item-label-text black-text">Quadruple</div>
+    	                						</div>
+    	                					</div>
+    	                					<hr class="separator">
+    	                				</div>
+    	                			</div>
+    	                		</div>
+    	                	</div>
+    	                	<div class="prop-listing-main-div">
+    	                		<div class="searched-city-details-div">
+    	                			<h5 class="showing-homes-label" style="display: flex; font-size: 18px; opacity: 1; font-weight: bold; margin-bottom: 20px; font-family: sans-serif;">Showing 11 houses out of 11</h5>
+    	                			<div style="width: 103%; display: flex; flex-direction: column;">
+    	                				<div>
+    	                					<div class="sort-container">
+    	                						<div class="three-item-filter-container">
+    	                							<div class="sort-item-container">
+    	                								<div class="white-circle-sort">
+    	                									<img src="rentimg/cavronleft.png" height="45px">
+    	                								</div>
+    	                								<div class="default-text-style text-small sort-title">Lowest price first</div>
+    	                							</div>
+    	                							<div class="sort-item-container">
+    	                								<div class="white-circle-sort">
+    	                								    <img src="rentimg/cavronleft.png"
+    	                								    height="45px">
+    	                								</div>
+    	                								<div class="default-text-style text-small sort-title">Highest price first</div>
+    	                							</div>
+    	                							<div class="sort-item-container">
+    	                								<div class="white-circle-sort">
+    	                								    <img src="rentimg/cavronleft.png"
+    	                								    height="45px">
+    	                								</div>
+    	                								<div class="default-text-style text-small sort-title">Distance from a landmark</div>
+    	                							</div>
+    	                						</div>
+    	                					</div>
+    	                				</div>
+    	                				<div class="selector" style="margin-top: 20px"></div>
+    	                				<div style="margin-top: 24px; margin-bottom: 24px;"></div>
+    	                			</div>
+    	                			<div></div>
+    	                			<hr>
+    	                		</div>
+    	                		<div>
+    	                			<div>
+    	                				<div class="property-wrapper">
+    	                					<a href="room.html" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0001 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>	
+    	                					</a>
+    	                					<a href="#" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0002 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>	
+    	                					</a>
+    	                					<a href="#" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0003 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>	
+    	                					</a>
+    	                					<a href="#" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0004 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>	
+    	                					</a>
+    	                				</div>
+    	                				<div arial-busy="false">
+    	                					<div class="offers-container" style="display: flex; padding: 40px 0 40px 24px;">
+    	                						<div class="slick-slider offers-slider-container offers-slider-container__listing slick-initialized" dir="ltr">
+    	                						    <div class="slick-arrow slick-offers-item-next slick-offers-item-prev" style="left: -23px;">
+    	                						    	<div style="border-radius: 50%; padding: 8px; background: white; opacity: 1; height: 54px; width: 54px; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.1) 0 15px 32px 0;">
+    	                						    		<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                						    	</div>
+    	                						    </div>
+    	                						    <div class="slick-list" style="height: 200px;">
+    	                						    	<div class="slick-track" style="opacity: 1; transform: translate3d(0, 0, 0); width: 4048px;">
+    	                						    		<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="3" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+                                                            <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    		<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 253px;">
+    	                						    			<div>
+    	                						    				<div class="offers-image-div" tabindex="-1" style="width: 100%; display: inline-block;">
+    	                						    					<img src="rentimg/offers1.png" class="offer-image-icon__listing" alt="Offer img">
+    	                						    				</div>
+    	                						    			</div>
+    	                						    		</div>
+    	                						    	</div>
+    	                						    </div>
+    	                						    <div class="slick-arrow slick-offers-item-next" style="right: 0;">
+    	                						    	<div style="border-radius: 50%; padding: 8px; background: white; opacity: 1; height: 54px; width: 54px; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.1) 0 15px 32px 0;">
+    	                						    		<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                						    	</div>
+    	                						    </div>
+    	                						</div>    
+    	                					</div>
+    	                					<span></span>
+    	                				</div>
+    	                				<div class="property-wrapper" style="gap: 0px 3%;">
+    	                					<a href="#1" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0005 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>				
+    	                					</a>
+    	                					<a href="#2" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0006 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>					
+    	                					</a>
+    	                					<a href="#3" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0007 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>    						
+    	                					</a>
+    	                					<a href="#4" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0008 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex; flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>				
+    	                					</a>
+    	                					<a href="#5" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0009 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 11 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>				
+    	                					</a>
+    	                					<a href="#6" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0010 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1100</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 13 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>
+    	                					</a>
+    	                					<a href="#7" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0011 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 10 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>				
+    	                					</a>
+    	                					<a href="#8" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0012 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1000</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 16 upcoming visits
+    	                								    </div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div> 						
+    	                					</a>
+    	                					<a href="#9" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0013 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1200</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px"> 12 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div> 						
+    	                					</a>
+    	                					<a href="#10" style="text-decoration: none;">
+    	                						<div class="div-property-box">
+    	                							<div class="property_image_container">
+    	                								<div class="slick-slider slick-initialized" dir="ltr">
+    	                									<div class="slick-arrow slick-property-item-prev">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronleft.png" style="opacity: 1; max-width: 24px; margin-left: 2.4px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                									<div class="slick-list">
+    	                										<div class="slick-track" style="width: 22644px; opacity: 1;">
+    	                											<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 444px; position: relative; left: 0; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                												<div tabindex="-1" style="width: 100%; display: inline-block;">
+    	                													<img class="property-crousel-image" id="property-image" src="rentimg/mess2.jpg">
+    	                												</div>
+    	                											</div>
+    	                										</div>
+    	                										<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -444px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -888px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1332px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -1776px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2220px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -2664px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3108px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3552px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -3996px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4440px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -4884px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5328px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -5772px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6216px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="15" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -6660px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="16" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7104px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="17" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7548px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="18" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -7992px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="19" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8436px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="20" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -8880px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="21" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9324px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="22" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -9768px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="23" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10212px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>
+    	                										<div data-index="24" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 444px; position: relative; left: -10656px; opacity: 0; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;">
+    	                										</div>	
+    	                									</div>
+    	                									<div class="slick-arrow slick-property-item-next">
+    	                										<div style="border-radius: 50%; padding: 8px; background: black; opacity: 0.34; height: 32px; width: 32px; display: flex; justify-content: center; align-items: center;">
+    	                											<img src="rentimg/cavronright.png" style="opacity: 1; max-width: 24px; margin-right: 2.7px; margin-top: 3.3px;">
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<img class="property_fav_icon__desktop" id="property_image_fav__desktop" src="rentimg/wishlist.png" height="50px">
+    	                							</div>
+    	                							<div class="property-card-details-wrapper">
+    	                								<div class="property-name-gender-div">
+    	                									<h2 class="property_name">RB KOL0014 Hatiara</h2>
+    	                									<img src="rentimg/gender.jpg" class="gender-image" style="height: 32px;">
+    	                								</div>
+    	                								<h3 class="small-grey-text property-address" style="margin-top: 3px;">Alkash More, Hatiara Gote, Hatiara, kolkata-700156, West Bengal</h3>
+    	                								<div id="room-price-div">
+    	                									<h5 id="room-price">₹ 1000</h5>
+    	                									<h5 id="per-bed" class="small-grey-text"> / month onwards</h5>
+    	                								</div>
+    	                								<div class="slashed-price-discount-container">
+    	                									<div style="height: fit-content; padding-top: 2px;">
+    	                										<div class="bed-details-div">
+    	                											<img src="rentimg/offers.png" style="width: 24px; height: 24px; padding-right: 8px; margin-top: -4px;">
+    	                											<h5 class="small-grey-text" style="color: rgb(240, 18, 18); opacity: 1; font-size: 11px; margin-top: 2px;">₹ 500 off on rent. T&C</h5>
+    	                										</div>
+    	                									</div>
+    	                								</div>
+    	                								<div class="pricing-div">
+    	                									<div class="fomo-view custom-invisible button-main-style button-medium-style">
+    	                										<img src="rentimg/lightning.jpg" class="undefined button-side-image" height="25px">15 upcoming visits
+    	                									</div>
+    	                									<div></div>
+    	                								</div>
+    	                							</div>
+    	                							<div arial-busy="false">
+    	                								<div class="property-more-show" style="display: block;">
+    	                									<div style="display: flex;  flex-direction: row; padding: 0 16px; justify-content: space-around;">
+    	                										<div class="button-white-common book-now-more-button button-main-style button-large-style">Pay to Book</div>
+    	                										<div class="schedule-a-visit-more-button button-main-style button-large-style">Schedule Free Visit</div>
+    	                									</div>
+    	                								</div>
+    	                								<span></span>
+    	                							</div>
+    	                						</div>					
+    	                					</a>
+    	                					<div></div>
+    	                				</div>
+    	                			</div>
+    	                		</div>
+    	                		<div arial-busy="false" style="width: 100%; height: 100px;">
+    	                			<span></span>
+    	                		</div>
+    	                		<p id="seo-content-listing">
+    	                			<p id="show-more-main-container">
+    	                				<div id="show-more-inner-container" class="show-more-inner-container" style="height: 100px;">
+    	                					<style>
+    	                						h1 {
+    	                							font-size: 20px;
+    	                						    font-weight: 900;}
+    	                						h2 {font-family: sans-serif;
+    	                							font-size: 18px;
+    	                						    font-weight: 900;}
+    	                						p {font-family: sans-serif;
+    	                							font-size: 16px;}        
+    	                					</style>
+    	                					<h1>PG for Boys in Kolkata</h1>
+    	                					<p>Looking for a <b>PG in Kolkata?</b> RENTAL BUDDY provides fully-furnished rooms with free Wi-Fi. Located near major corporate hubs, <b>rental rooms in Kolkata</b> are close to everything and anything you need. You can opt for twin sharing or triple sharing basis your need. The <b>rooms for rent in Kolkata</b> include beds, wardrobe, attached bathroom. There’s a fully equipped kitchen which all the utensils. There’s common laundry room as well.
+    	                					</p>
+    	                					<h2>No Brokerage, No Lock-in</h2>
+    	                					<p>We know how much you hate paying brokerage, that’s why we have <b>paying guests in Kolkata</b> which can be booked without any brokerage. You don’t need to spend money on brokers or chasing them to show you around. Also, there’s no lock-in period. Stay for as long as you want.
+    	                					</p>
+    	                					<h2>Additional services at no extra cost</h2>
+    	                					<p>These <b> sharing and private rooms in the PG in Kolkata</b> comes with housekeeping. Also, there’s an On-call stay supervisor for emergency situations. All you need to do is get your bags and start living. With flatmates from all over the country, imagine the kind of cuisines you will be able to try and the stories you’ll make!
+    	                					</p>
+    	                					<h2>Create moments, make memories at Rental Buddy Room</h2>
+    	                					<p>Whether it’s a midnight gossip session or an experiment in the kitchen, your <b>flatmates in Kolkata</b> are going to make it double the fun. Walk in as strangers and walk out as friends forever as some of the best friends are found in a PG.
+    	                					</p>
+    	                				</div>
+    	                				<p class="show-more-inner-read-more">...Read More</p>
+    	                			</p>
+    	                		</p>
+    	                		<div class="popular-loc-listing-container" style="height: 10vh;">
+    	                			<div class="two-grid-filter-container">
+    	                				<div class="seo-city-btn button-large-style button-main-style">Flats For Rent in Kolkata</div>
+    	                				<div class="seo-city-btn button-large-style button-main-style">House For Rent in Kolkata</div>
+    	                			</div>
+    	                		</div>
+    	                	</div>
+    	                </div>
+                    </div>
+		        </div>	
+		    </div>    
+	    </div>
+	</div>    
+
+<!--Amenities Div Finishing-->
+<!--Login Form Div Starting-->
+
+	<div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="rentimg/logo.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="contain">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="contain" style="background-color:#f1f1f1;">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>    
+    <div class="clr"></div>
+<!--Login Form Div Finishing-->
+</body>
+</html>			
